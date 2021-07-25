@@ -1,5 +1,5 @@
 # TIL
-〰️ ✍️ Today I Learn
+〰️ ✍️ Today I Learned
 
 # Git Commit
 * 🎉 `:tada:` begin a project
