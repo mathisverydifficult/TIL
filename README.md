@@ -16,3 +16,5 @@
 
 ## TypeScript
 1. [typescript](./TypeScript/typescript.md)
+2. [type annotation](./TypeScript/type-annotation.md)
+3. [basic types](./TypeScript/basic-types)
