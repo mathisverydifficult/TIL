@@ -3,7 +3,7 @@
 ## 1. 사용
 ```
 크롬 개발자 창 -> Application -> Storage -> Local Storage -> Key : Value
-                                            Session Storage -> Key : Value
+                                         Session Storage -> Key : Value
 ```
 
 ## 2. 종류
