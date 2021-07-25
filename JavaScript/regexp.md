@@ -51,7 +51,7 @@ console.log(str.match(regexp))
 **replace**     | 일치하는 문자열을 대체하고 대체된 문자열을 반환             | `문자열.replace(정규식, 대체문자)`
 **split**       | 일치하는 문자열을 분할하여 배열로 반환                      | `문자열.split(정규식)`
 **toString**    | 생성자 함수 방식의 정규식을 리터럴 방식의 문자열로 반환     | `생성자_정규식.toString()`
-<br/><br/>
+
 
 ## 6. 옵션 (플래그)
 옵션 | 설명 | 설명
@@ -59,7 +59,7 @@ console.log(str.match(regexp))
 g | global         | 모든 문자 일치
 i | ignore case    | 영어 대소문자를 구분하지 않고 일치
 m | multi line     | 여러 줄 일치
-<br/><br/>
+
 
 ### 6-1. 예제
 문장이 끝나는 부분($)에 마침표(.)가 있는지 확인하라
@@ -96,7 +96,7 @@ ab?      | b가 없거나 b와 일치
 \s       | 공백(Space, Tab 등)에 일치
 (?=)     | 앞쪽 일치 (Lookahead)
 (?<=)    | 뒤쪽 일치 (Lookbehind)
-<br/><br/>
+
 
 ### 7-1. 예제
 ```javascript
