@@ -33,4 +33,5 @@ obj = 100n                // error
 obj = Symbol()            // error
 obj = null                // error
 obj = undefined           // error
+object.create(0)          // error
 ```
