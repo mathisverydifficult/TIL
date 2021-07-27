@@ -12,6 +12,7 @@
 2. [object](./JavaScript/object.md)
 3. [regexp](./JavaScript/regexp.md)
 4. [storage](./JavaScript/storage.md)
+5. [ES2020 & ES2021](./JavaScript/es2020-es2021.md)
 <br/><br/>
 
 ## TypeScript
@@ -19,3 +20,4 @@
 2. [type annotation](./TypeScript/type-annotation.md)
 3. [basic types](./TypeScript/basic-types.md)
 4. [object](./TypeScript/object.md)
+<br/><br/>
