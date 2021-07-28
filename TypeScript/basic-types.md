@@ -66,11 +66,11 @@ Array             | 배열을 생성할 때 사용하는 리스트 형태의 객
 ### 2-3. 프로그래밍을 도울 몇 가지 타입
 타입 | 설명 | 링크
 |---|---|---|
-Any               | 타입 추론할 수 없거나 타입 체크가 필요없는 변수에 사용 | [any](./any.md)
-Void              |
-Never             |
-Unknown           |
-Enum              |
+Any               | 타입 추론할 수 없거나 타입 체크가 필요없는 변수에 사용  | [any](./any.md)
+Void              | 일반적으로 값을 반환하지 않는 함수의 반환 유형 사용
+Never             | 일반적으로 함수의 리턴 타입으로 사용                    | [never](./never.md)
+Unknown           | TypeScript 3.0 부터 도입 `any < unknown`                | [unknown](./unknown.md)
+Enum              | 열거형으로 이름이 있는 상수들의 집합을 정의
 Tuple             | 고정된 요소 수 만큼의 타입을 미리 선언후 배열을 표현    | [array & tuple](./array-tuple.md)
 
 <br/><br/>

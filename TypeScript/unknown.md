@@ -10,15 +10,16 @@
 <br/><br/>
 
 ## 1. 사용
-타입가드는 런타임 시 타입이 한정된다.  
+타입가드(Type Guard)를 사용해서 할당과 호출이 가능하다.   
 unknown은 **항상 타입가드를 통한 사용**만 가능하지만, any는 타입가드 없이 사용 가능하다.
 ```typescript
 declare const maybe: unknown
 
-// error (any였다면 오류가 발생하지 않음)
+// compile error 
+// any였다면 컴파일 에러가 발생하지 않음
 const aNumber: number = maybe   
 
-// 타입가드를 통한 할당
+// Use Type Guard
 if (typeof maybe === 'string') {
   const aString: string = maybe
   const aNumber: number = number  // error
