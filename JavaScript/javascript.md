@@ -6,8 +6,9 @@
 ### 1-1. 변수 유효범위
 유효범위 | 영문 | 설명
 |---|---|---|
-지역변수 | local variable   | 함수 내에서 선언된 변수
-전역변수 | global variable  | 함수의 외부에서 선언된 변수
+지역변수 | local variable   | 함수 **내부**에서 선언된 변수
+전역변수 | global variable  | 함수의 **외부**에서 선언된 변수
+
 <br/>
 
 ### 1-2. 형변환
@@ -76,15 +77,37 @@ timeout(() => {
   console.log('done')
 })
 ```
-* timeout의 인수로서 done을 출력하는 함수를 넣음
+* timeout의 인수로서 done을 출력하는 함수를 넣는다.
 * 거슬러 올라가보면 timeout 함수의 매개변수 callback에 넣은 셈
-* timeout함수의 내부에서 콜백을 호출했기 때문에 world -> done 순으로 출력
+* timeout함수의 내부에서 콜백을 호출했기 때문에 world -> done 순으로 출력한다.
 <br/><br/>
 
 ## 3. Class
 ### 3-1. 생성자 함수
+> 객체를 생성하기 위한 템플릿 함수
+* 함수 이름의 첫 글자는 **대문자**로 시작
+* 반드시 `new` 연산자를 붙여 실행
+```javascript
+function User {
+  constructor(first, last) {
+    this.firstName = first
+    this.lastName = last
+  }
+  User.prototype.getFullName = function () {
+    return `${this.firstName} ${this.lastName}`
+  }
+}
+
+const my = new User('mint', 'park')
+console.log(my.getFullName())
+```
+<br/>
 
 ### 3-2. this
+> **일반 함수**는 ***호출 위치***에 따라 this 정의  
+> **화살표 함수**는 자신이 ***선언된 함수 범위***에서 this 정의
+
+<br/>
 
 ### 3-3. ES6 Classes
 ```javascript
@@ -93,10 +116,14 @@ class User {
     this.firstName = first
     this.lastName = last
   }
-  getFullname() {
+  getFullName() {
     return `${this.firstName} ${this.lastName}`
   }
 }
+
+onst my = new User('mint', 'park')
+console.log(my.getFullName())
 ```
+<br/>
 
 ### 3-4. 상속
