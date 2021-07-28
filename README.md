@@ -13,16 +13,15 @@
 <br/><br/>
 
 ### JavaScript
-* [callback](./JavaScript/callback.md)
-* [object](./JavaScript/object.md)
-* [regexp](./JavaScript/regexp.md)
-* [storage](./JavaScript/storage.md)
+* [Javascript](./JavaScript/javascript.md)
+* [Regexp](./JavaScript/regexp.md)
+* [Storage](./JavaScript/storage.md)
 * [ES2020 & ES2021](./JavaScript/es2020-es2021.md)
 <br/><br/>
 
 ### TypeScript
-* [typescript](./TypeScript/typescript.md)
-* [type annotation](./TypeScript/type-annotation.md)
-* [basic types](./TypeScript/basic-types.md)
-* [object](./TypeScript/object.md)
+* [Typescript](./TypeScript/typescript.md)
+* [Type annotation](./TypeScript/type-annotation.md)
+* [Basic types](./TypeScript/basic-types.md)
+* [Object](./TypeScript/object.md)
 <br/><br/>
