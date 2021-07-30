@@ -25,7 +25,7 @@ const arrowFunction = () => {
 ```
 ```javascript
 // 인자가 하나 일 경우 괄호를 생략할 수 있고,
-// 표현식이 하나 일 경우 중괄호를 생략할 수 있다.
+// 표현식이 하나 일 경우에도 중괄호를 생략할 수 있다.
 const arrowFunction = x => return x
 ```
 <br/>
@@ -89,15 +89,15 @@ timeout(() => {
 * 반드시 `new` 연산자를 붙여 실행
 ```javascript
 function User {
-  constructor(first, last) {
-    this.firstName = first
-    this.lastName = last
-  }
-  User.prototype.getFullName = function () {
-    return `${this.firstName} ${this.lastName}`
-  }
+  this.firstName = first
+  this.lastName = last
 }
 
+User.prototype.getFullName = function () {
+  return `${this.firstName} ${this.lastName}`
+}
+
+// my : Instance
 const my = new User('mint', 'park')
 console.log(my.getFullName())
 ```
@@ -105,13 +105,61 @@ console.log(my.getFullName())
 
 ### 3-2. this
 > **일반 함수**는 ***호출 위치***에 따라 this 정의  
-> **화살표 함수**는 자신이 ***선언된 함수 범위***에서 this 정의
+> **화살표 함수**는 자신이 선언된 ***함수 범위***에서 this 정의
+```javascript 
+const user = {
+  name: 'Mint',
+  normal: function () {
+    console.log(this.name)
+  },
+  arrow: () => {
+    console.log(this.name)
+  }
+}
 
+user.normal()   // Mint
+user.arrow()    // undefined
+```
+화살표 함수는 호출된 위치에 전혀 관계없이 **선언**된 범위 안에서 this가 정의된다.  
 <br/>
 
-### 3-3. ES6 Classes
+### 3-3. 클래스 내부에서의 this
+```javascript
+function User(name) {
+  this.name = name
+}
+
+User.prototype.normal = function () {
+  console.log(this.name)
+}
+
+User.prototype.arrow = () => {
+  console.log(this.name)
+}
+
+const mint = new User('Mint')
+mint.normal()   // Mint
+mint.arrow()    // undefined
+```
+
+```javascript
+const timer = {
+  name: 'Mint',
+  timeout: function () {      // 여기까지가 함수 범위
+    setTimeout( () => {
+      console.log(this.name)
+    }, 2000)
+  }
+}
+timer.timeout()     // Mint
+```
+<br/>
+
+### 3-4. ES6 Classes
+> ES6에서 처음 등장한 자바스크립트 클래스 패턴
 ```javascript
 class User {
+  // 아래 표현식은 constructor: function (first, last) { } 와 같다.
   constructor(first, last) {
     this.firstName = first
     this.lastName = last
@@ -126,4 +174,4 @@ console.log(my.getFullName())
 ```
 <br/>
 
-### 3-4. 상속
+### 3-5. 상속
