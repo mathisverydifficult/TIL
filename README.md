@@ -1,5 +1,5 @@
 # TIL
-〰️ ✍️ Today I Learned
+Today I Learned 〰️ ✍️ 
 <br/><br/>
 
 ## What I Learned ...
@@ -8,22 +8,8 @@
 <br/><br/>
 
 ## Content
-1. [JavaScript](#JavaScript)
-2. [TypeScript](#TypeScript)
-<br/><br/>
+Link  | Name
+|---|---|
+[💛](./JavaScript/index.md) | JavaScript
+[💙](./TypeScript/index.md) | TypeScript
 
-### JavaScript
-* [Javascript](./JavaScript/javascript.md)
-* [Regexp](./JavaScript/regexp.md)
-* [Storage](./JavaScript/storage.md)
-* [Map](./)
-* [ES2020 & ES2021](./JavaScript/es2020-es2021.md)
-<br/><br/>
-
-### TypeScript
-* [Typescript](./TypeScript/typescript.md)
-* [Type annotation](./TypeScript/type-annotation.md)
-* [Basic types](./TypeScript/basic-types.md)
-* [Object](./TypeScript/object.md)
-* [Interface](./TypeScript/interface.md)
-<br/><br/>
