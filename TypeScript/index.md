@@ -1,7 +1,7 @@
 # TypeScript
-* [Typescript](./TypeScript/typescript.md)
-* [Type annotation](./TypeScript/type-annotation.md)
-* [Basic types](./TypeScript/basic-types.md)
-* [Object](./TypeScript/object.md)
-* [Interface](./TypeScript/interface.md)
+* [Typescript](./typescript.md)
+* [Type annotation](./type-annotation.md)
+* [Basic types](./basic-types.md)
+* [Object](./object.md)
+* [Interface](./interface.md)
 <br/><br/>
