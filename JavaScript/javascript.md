@@ -174,4 +174,38 @@ console.log(my.getFullName())
 ```
 <br/>
 
-### 3-5. 상속
+## 4. 구조분해할당
+> 배열이나 객체의 속성을 해체하여 그 값을 개별 변수에 담을 수 있게 하는 JS 표현식
+
+<br/>
+
+> 기본 할당
+```javascript
+const {a, b, c} = {a: 'hello', b: 'world', c: 'baby'}
+```
+> 선언 없는 할당
+```javascript
+let a, b
+({a, b} = {a: 1, b: 2})
+```
+> 새로운 변수 이름으로 할당
+```javascript
+let pet = {cat: 'coco', dog: 'tommy'}
+let {cat: myCat, dog: myDog} = pet
+
+console.log(myCat, myDog)
+```
+> 기본값 : 객체로부터 해체된 값이 `undefined`인 경우, 변수에 기본 값을 할당
+```javascript
+let {city = 'seoul', code = 0} = {city: 'busan'}
+console.log(city, code)   // busan, 0
+```
+> 기본값을 갖는 새로운 이름의 변수에 할당
+```javascript
+let {a: aa = 10, b: bb = 20} = {a: 30}
+console.log(aa, bb)
+```
+
+<br/>
+
+[참고문서](https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment)
