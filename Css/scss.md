@@ -1,19 +1,21 @@
 # Sass (SCSS)
-* CSS 전처리도구
-* `Sass`와 `SCSS` 두 가지 문법을 제공하지만,  `SCSS`를 사용하는 것을 더 권장한다.
+* CSS 전처리도구 (CSS Preprocessor) 중 하나이다. `Less`, `Sass(SCSS)`, `Stylus`  
+* `Sass`와 `SCSS` 두 가지 문법을 제공하지만, 보통은 `SCSS`를 사용하는 것을 더 권장한다.
+  + 차이점은 `{}`와 `;`의 유무이다.
 
 <br/>
 
 ## 1. Install
 > Sass는 웹에서 직접 동작할 수 없다.  
-전처리기로 작성 후 CSS로 컴파일을 해야한다. 다양한 컴파일 방식이 있다.
+전처리기로 작성 후 CSS로 컴파일을 해야한다. 다양한 방식으로 컴파일을 할 수 있다.
 
 <br/>
 
-### 1-1. `Parcel` 을 이용하기
+### 1-1. `Parcel` 을 이용하여 컴파일 하기
 ```
 npm install -g parcel-bundler
 ```
+<br/>
 
 ## 2. 사용
 ### 2-1. 기본
@@ -43,14 +45,14 @@ $color: red;
 
 <br/>
 
-### 2-3. 중첩
+### 2-3. 중첩 (Nesting)
 ```scss
 .container {
   /* > : 자식선택자 */
   > ul {
     li {
       .title {
-
+ㄴ
       }
       .content {
 
@@ -62,7 +64,7 @@ $color: red;
 
 <br/>
 
-### 2-4. 상위선택자 참조
+### 2-4. 상위선택자 참조 (Ampersand)
 ```scss
 .btn {
   position: absolute;
@@ -77,6 +79,14 @@ $color: red;
       margin: 5px;
     }
   }
+}
+```
+
+```scss
+.title {
+  &-small { font-size: 10px; }
+  &-medium { font-size: 36px; }
+  &-large { font-size: 72px; }
 }
 ```
 
