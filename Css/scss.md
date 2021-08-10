@@ -52,7 +52,7 @@ $color: red;
   > ul {
     li {
       .title {
-ㄴ
+
       }
       .content {
 
