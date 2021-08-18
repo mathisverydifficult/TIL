@@ -1,7 +1,6 @@
 # UIUX
-
 개발할 때 유용한 UIUX 정보를 모으는 글 ✍️
-<br/>
+<br/><br/>
 
 ## 1. Web Font
 
@@ -14,8 +13,6 @@
 
 <br/>
 
-
-
 ### 1-2. 나눔스퀘어
 
 > Light, Regular, Bold, ExtraBold
@@ -25,8 +22,6 @@
 
 <br/>
 
-
-
 ### 1-3. Black Han Sans 검은고딕
 
 > 한 가지의 두께만 제공하지만 두께가 굵으면서 가독성이 좋은 폰트이다.
@@ -35,10 +30,6 @@
 [Google Fonts](https://fonts.google.com/specimen/Black+Han+Sans?preview.text_type=custom)
 
 <br/>
-
-
-
-
 
 ## 2. 가독성을 높여보자
 
