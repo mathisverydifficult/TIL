@@ -6,7 +6,7 @@
 
 ### 1-1. Noto Sans KR 본고딕
 
-> Thin, Light, DemeLight, Regular, Medium, Bold, Black 
+> Thin, Light, DemeLight, Regular, Medium, Bold, Black  
 > 지원하는 두께가 총 7가지로 선택의 폭이 넓다.
 
 [Google Fonts](https://fonts.google.com/specimen/Noto+Sans+KR#standard-styles)
@@ -15,7 +15,7 @@
 
 ### 1-2. 나눔스퀘어
 
-> Light, Regular, Bold, ExtraBold
+> Light, Regular, Bold, ExtraBold  
 > 지원하는 두께가 적고, 굵지 않아서 본문 폰트에 적합하다.
 
 [네이버 글꼴](https://hangeul.naver.com/2017/nanum)
@@ -24,7 +24,7 @@
 
 ### 1-3. Black Han Sans 검은고딕
 
-> 한 가지의 두께만 제공하지만 두께가 굵으면서 가독성이 좋은 폰트이다.
+> 한 가지의 두께만 제공하지만 두께가 굵으면서 가독성이 좋은 폰트이다.  
 > 제목 사용에 유용하다.
 
 [Google Fonts](https://fonts.google.com/specimen/Black+Han+Sans?preview.text_type=custom)
