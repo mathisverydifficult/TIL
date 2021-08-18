@@ -43,3 +43,12 @@
 
   ![fontcolor](https://user-images.githubusercontent.com/53563513/129853448-001d8129-0121-4bb9-9a9a-6b615e77cf0e.png)
 
+<br/>
+
+## 3. 시스템 컬러
+color | mean
+|---|---|
+Red | 오류, 불가, 금지. 위험, 삭제 등
+Yellow | 경고, 주의, 조심 등
+Blue | 활성화, 정보입력 등
+Green | 안전, 성공, 계속 진행 등
