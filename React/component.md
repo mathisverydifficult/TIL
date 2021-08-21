@@ -96,9 +96,42 @@ Component.defaultProps = {
 ### 2-2. State 사용
 ```javascript
 class Component extends React.Component {
-  // object
+  // state 초기화 방식 1 (간결)
   state = {
     count: 0
+  }
+
+  // state 초기화 방식 2
+  construnctor(props) {
+    super(props)
+
+    this.state = {
+      count: 0
+    }
+  }
+
+  render() {
+    return (
+      <p>this.state.count</p>
+    )
+  }
+
+  componentDidMount() {
+    setTimeout(() => {
+      // 올바르지 않은 방식
+      this.state.count = this.state.count + 1
+
+      // 올바른 방식 1
+      this.setState({
+        count: this.state.count + 1
+      })
+
+      // 올바른 방식 2
+      this.setState((previousState) => {
+        const newState = { count: previousState.count + 1}
+        return newState
+      })
+    }, 1000)
   }
 }
 ```
