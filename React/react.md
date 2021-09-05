@@ -95,7 +95,7 @@ this.setState({comment: 'Hello'});
 |---|---|
 **`constructor`**               | 컴포넌트 생성자 메서드. 컴포넌트가 만들어지면 가장 먼저 실행된다.
 `getDerivedStateFromProps`      |
-**`render`**                    | 컴포넌트를 랜더링
+**`render`**                    | 컴포넌트를 ***최초*** 랜더링
 **`componentDidMount`**         | 컴포넌트의 첫번째 렌더링이 마치고 나면 호출되는 메서드. 이 메서드가 호출되는 시점에는 우리가 만든 컴포넌트가 화면에 나타난 상태이다.
 
 <br/>

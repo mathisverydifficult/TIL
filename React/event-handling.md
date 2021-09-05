@@ -1,5 +1,5 @@
 # Event Handling
-Html DOM을 클릭하면 이벤트가 발생하고, 발생하면 그에 맞는 변경이 일어나도록 한다.
+Event Handling이란 Html DOM을 클릭하면 이벤트가 발생하고, 발생하면 그에 맞는 변경이 일어나도록 한다.
 
 * Event Name은 `camelCase`로만 사용할 수 있다.
   + `onClick`, `onMouseEnter`
@@ -11,7 +11,7 @@ Html DOM을 클릭하면 이벤트가 발생하고, 발생하면 그에 맞는 �
 <br/>
 
 ## 1. 함수형 컴포넌트
-```javascript
+```jsx
 function Component() {
   return (
     <div>
@@ -25,13 +25,59 @@ function Component() {
 }
 ```
 
+<br/>
+
 ## 2. 클래스 컴포넌트
-```javascript
+```jsx
 class Component extends React.Component {
+  state = {
+    count: 0
+  }
+
   render() {
     return (
-      
+      <div>
+        <p>{this.state.count}</p>
+        <button onClick={() => {
+          console.log('클릭했습니다.')
+          this.setState((state) => ({
+            ...state, 
+            count: state.count + 
+          }))
+        }}>
+          Click me!
+      </button>
+    </div>
     )
+  }
+}
+```
+<br/>
+
+## 3. 인라인으로 작성된 것을 메소드로 분리해보자
+```jsx
+class Component extends React.Component {
+  state = {
+    count: 0
+  }
+
+  render() {
+    return (        
+      <div>
+        <p>{this.state.count}</p>
+        <button onClick={{this.click}}>
+          Click me!
+      </button>
+    </div>
+    )
+  }
+
+  click = () => {
+    console.log('클릭했습니다.')
+    this.setState((state) => ({
+      ...state,
+      count: state.count +
+    }))
   }
 }
 ```
