@@ -1,7 +1,7 @@
 # Life Cycle
 리액트 컴포넌트는 **탄생부터 죽음**까지 여러 지점에서 개발자가 작업이 가능하도록 메서드를 오버라이딩 할 수 있게 해준다.
 
-> 모든 컴포넌트는 여러 종류의 “생명주기 메서드”를 가지며, 이 메서드를 오버라이딩하여 특정 시점에 코드가 실행되도록 설정할 수 있다. [^1]
+> 모든 컴포넌트는 여러 종류의 “생명주기 메서드”를 가지며, 이 메서드를 오버라이딩하여 특정 시점에 코드가 실행되도록 설정할 수 있다. 
 
 <br/>
 
@@ -82,4 +82,4 @@ v16.3 이전 | v16.3 이후
 componentWillUnmount | componentWillUnmount
 
 
-[^1]: [ReactDocument](https://ko.reactjs.org/docs/react-component.html)
+[React Lifecycle](https://ko.reactjs.org/docs/react-component.html)
