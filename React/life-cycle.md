@@ -1,6 +1,8 @@
 # Life Cycle
 리액트 컴포넌트는 **탄생부터 죽음**까지 여러 지점에서 개발자가 작업이 가능하도록 메서드를 오버라이딩 할 수 있게 해준다.
 
+> 모든 컴포넌트는 여러 종류의 “생명주기 메서드”를 가지며, 이 메서드를 오버라이딩하여 특정 시점에 코드가 실행되도록 설정할 수 있다. [^1]
+
 <br/>
 
 ## Declarative 선언적 유저 인터페이스
@@ -15,6 +17,7 @@
 <br/>
 
 ## V16.3 이전
+> 마운트 : component 생성 및 마운트
 * `constructor`
 * `componentWillMount`
 * `render`               : 최초 랜더
@@ -22,7 +25,7 @@
 
 <br/>
 
-> props, state 변경
+> 업데이트 : props, state 변경
 * `componentWillReceiveProps`
   + props를 새로 지정했을 때 바로 호출된다.
   + 여기는 state의 변경에 반응하지 않는다.
@@ -37,11 +40,46 @@
     - true면 render / false면 render 호출 X
     - 이 함수를 구현하지 않으면 default = true
 * `componentWillUpdate`
+  + 컴포넌트가 재 랜더링 되기 직전에 불린다.
+  + 여기서는 `setState` 쓰지 않는다.
 * `render`
 * `componentDidUpdate` 
+  + 컴포넌트가 재 랜더링을 마치면 불린다.
+
+<br/>
+
+> 마운트 해제 : component UnMount  
+
+실제로 언마운트 이후에는 무언가를 처리할 수 없기 때문에 언마운트 직전이라는 Hook이 있다. `(=componentWillUnmount)`
+* componentWillUnmount
+
+<br/>
 
 ## V16.3 이후
-*
-*
-*
-*
+> 마운트
+
+v16.3 이전 | v16.3 이후
+|----------|-----------|
+constructor | constructor
+~~componentWillMount~~ | getDerivedStateFromProps
+render | render
+componentDidMount | componentDidMount
+
+> 업데이트
+
+v16.3 이전 | v16.3 이후
+|----------|-----------|
+~~componentWillReceiveProps~~ | getDrivedStateFromProps
+shouldComponentUpdate | shouldComponentUpdate
+render | render
+~~componentWillUpdate~~ | getSnapshotBeforeUpdate
+componentDidUpdate | componentDidUpdate
+
+> 마운트 해제
+
+v16.3 이전 | v16.3 이후
+|----------|-----------|
+componentWillUnmount | componentWillUnmount
+
+
+[^1]: [ReactDocument](https://ko.reactjs.org/docs/react-component.html)
