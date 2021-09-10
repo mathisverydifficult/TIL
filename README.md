@@ -1,7 +1,7 @@
 # TIL
 ![img](https://user-images.githubusercontent.com/53563513/132780622-c5f8f236-6fd6-46c6-8536-0dbb6a927cde.png)
 
-Today I Learned 〰️ ✍️ 
+<center>Today I Learned 〰️ ✍️ </center>
 <br/><br/>
 
 ## What I Learned ...
@@ -18,9 +18,11 @@ Link  | Name
 [💙](#TypeScript) | TypeScript
 [🐬](#React)      | React
 [👀](#UIUX)       | UXUI
+[🔗](#DEV)        | DEV
 
 ## CSS
 * [SCSS](Css/scss.md)
+* [마크업 레벨 테스트](https://mintparc.github.io/posts/markup-level-test)
 
 <br/>
 
@@ -61,3 +63,8 @@ Link  | Name
 
 ## UIUX
 * [개발할 때 유용한 UIUX 정보를 모으는 글 ✍️](UIUX/index.md)
+
+<br/>
+
+## DEV
+* [Tech Interview](Dev/tech-interview.md)
