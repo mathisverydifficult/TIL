@@ -20,7 +20,7 @@ Link  | Name
 [👀](#UIUX)       | UXUI
 
 ## CSS
-* [SCSS](CSS/scss.md)
+* [SCSS](Css/scss.md)
 
 <br/>
 
@@ -55,7 +55,7 @@ Link  | Name
 * [React Component](React/component.md)
 * [React Modal](React/modal.md)
 * [React LifeCycle](React/life-cycle.md)
-* [React Event Handling](React/event-handling)
+* [React Event Handling](React/event-handling.md)
 
 <br/>
 
