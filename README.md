@@ -4,12 +4,6 @@
 <center>Today I Learned 〰️ ✍️ </center>
 <br/><br/>
 
-## What I Learned ...
-<img src="https://img.shields.io/badge/CSS3-96BAFF?style=flat-square&logo=css3&logoColor=white"/> <img src="https://img.shields.io/badge/JavaScript-FFC947?style=flat-square&logo=JavaScript&logoColor=white"/>
-<img src="https://img.shields.io/badge/TypeScript-125D98?style=flat-square&logo=TypeScript&logoColor=white"/>
-<img src="https://img.shields.io/badge/React-A2DBFA?style=flat-square&logo=React&logoColor=white"/>
-<br/><br/>
-
 ## Content
 Link  | Name
 |---|---|
@@ -18,6 +12,7 @@ Link  | Name
 [💙](#TypeScript) | TypeScript
 [🐬](#React)      | React
 [👀](#UIUX)       | UXUI
+[🧬](#Algorithm)  | Algorithm
 [🔗](#DEV)        | DEV
 
 <br/>
@@ -60,11 +55,18 @@ Link  | Name
 * [React Modal](React/modal.md)
 * [React LifeCycle](React/life-cycle.md)
 * [React Event Handling](React/event-handling.md)
+* [Create React Project](React/create.md)
 
 <br/>
 
 ## UIUX
 * [개발할 때 유용한 UIUX 정보를 모으는 글 ✍️](UIUX/index.md)
+
+<br/>
+
+# Algorithm
+* [스택 Stack](https://mintparc.github.io/posts/stack)
+* [큐 Queue](https://mintparc.github.io/posts/queue)
 
 <br/>
 

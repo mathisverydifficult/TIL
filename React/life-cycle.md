@@ -81,5 +81,40 @@ v16.3 이전 | v16.3 이후
 |----------|-----------|
 componentWillUnmount | componentWillUnmount
 
+<br/>
 
+## ComponentDidCatch 에러 캐치
+
+```jsx
+state = {
+  hasError: false
+}
+
+render() {
+  if (this.state.hasError) {
+    return <div>예상하지 못한 에러가 발생했습니다.</div>
+  }
+
+  return <MySite />
+}
+
+// MySite에서 에러가 발생했다!
+componentDidCatch(error, info) {
+  // hasError -> true 
+  // reRender
+  this.setState({hasError: true})
+}
+```
+
+`componentDidCatch`의 단점은 자기 자신에게 문제가 있을 때는 캐치가 되지 않는다. 그래서 `Error Boundaries`를 가장 부모로 만들고, 그 자식으로 우리의 서비스 최상위 컴포넌트를 설정하고 에러를 캐치한다.
+(보통은 라이브러리를 사용한다.)
+
+<br/>
+
+## Error Boundaries
+https://ko.reactjs.org/docs/error-boundaries.html
+
+<br/>
+
+## 참고
 [React Lifecycle](https://ko.reactjs.org/docs/react-component.html)
