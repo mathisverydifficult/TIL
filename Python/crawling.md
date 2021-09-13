@@ -9,15 +9,29 @@
 <br/>
 
 ### Install
+> Install Package
 ```
 pip install selenium
 ```
 
+> Download Web Driver
+
+[Chrome Web Driver](https://sites.google.com/a/chromium.org/chromedriver/downloads)  
+본인의 브라우저 버전에 맞는 `webdriver`를 다운로드  
+주로 크롬을 많이 사용한다.  
+
+<br/>
+
+### Import
+```python
+import selenium
+from selenium import webdriver
+```
+
 ### Open Browser
 ```python
-from selenium import webdriver
-
 driver = webdriver.Chrome('웹 드라이버 경로.exe')
+driver.get('브라우저에 띄울 URL')
 ```
 
 ### Close Browser
@@ -47,6 +61,26 @@ driver.back()
 ```python
 driver.forward()
 ```
+
+### Wait
+> driver.implicitly_wait
+```python
+driver.implicitly_wait(10)
+```
+> time.sleep
+```python
+time.sleep(10)
+```
+
+> 둘의 차이점?
+
+* driver.implicitly_wait
+  + selenium에서만 사용가능
+  + n초가 지나기 전에 브라우저 파싱이 완료되면 기다리지 않고 다음 코드 실행
+
+* time.sleep
+  + 무조건 n초를 기다림 (무조건 지연)
+
 
 ### Select Element
 ```python
