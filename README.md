@@ -11,6 +11,7 @@ Link  | Name
 [💛](#JavaScript) | JavaScript
 [💙](#TypeScript) | TypeScript
 [🐬](#React)      | React
+[⚡️](#Python)      | Python
 [👀](#UIUX)       | UXUI
 [🧬](#Algorithm)  | Algorithm
 [🔗](#DEV)        | DEV
@@ -56,6 +57,11 @@ Link  | Name
 * [React LifeCycle](React/life-cycle.md)
 * [React Event Handling](React/event-handling.md)
 * [Create React Project](React/create.md)
+
+<br/>
+
+## Python
+* [Web Crawling](Python/crawling.md)
 
 <br/>
 
