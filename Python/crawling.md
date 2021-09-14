@@ -108,3 +108,17 @@ driver.find_element_by_xpath('').send_keys('입력 텍스트')
 ```python
 driver.find_element_by_xpath('').clear()
 ```
+
+### Open New Tab
+> 새탭으로 열고 새탭으로 이동
+```python
+driver.execute_script("window.open('새탭으로 열어야하는 URL', '_blank')")
+driver.switch_to.window(driver.window_handles[1])
+```
+
+### Close Tab
+> 열었던 탭 닫고 메인창으로 이동
+```python
+driver.execute_script("window.close('닫을 탭', '_blank')")
+driver.switch_to.window(driver.window_handles[0])
+```
